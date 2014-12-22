@@ -109,6 +109,7 @@ namespace util
 			pos = format.find('{', start);
 			if (pos == std::string::npos)
 			{
+				ss << format.substr(start);
 				break;
 			}
 
